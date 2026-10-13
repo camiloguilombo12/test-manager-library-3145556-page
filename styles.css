@@ -1,0 +1,153 @@
+:root {
+  --color-primary: #1f4e79;
+  --color-primary-dark: #163a5a;
+  --color-text: #1f2933;
+  --color-muted: #52606d;
+  --color-surface: #ffffff;
+  --color-background: #f5f7fa;
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--color-text);
+  background: var(--color-surface);
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Encabezado */
+.site-header {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.main-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Portada */
+.hero {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: #ffffff;
+  padding: 72px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 16px;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+}
+
+.hero-text {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Secciones */
+.section {
+  padding: 56px 0;
+}
+
+.section-alt {
+  background: var(--color-background);
+}
+
+.section h2 {
+  margin-top: 0;
+  font-size: 1.7rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid #e4e7eb;
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--color-primary);
+}
+
+.card p {
+  margin-bottom: 0;
+  color: var(--color-muted);
+}
+
+.steps {
+  padding-left: 20px;
+  font-size: 1.05rem;
+}
+
+.steps li {
+  margin-bottom: 8px;
+}
+
+/* Pie de página */
+.site-footer {
+  background: var(--color-text);
+  color: #cbd2d9;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* En pantallas pequeñas el menú pasa debajo del nombre */
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero {
+    padding: 48px 0;
+  }
+
+  .card-grid-two {
+    grid-template-columns: 1fr;
+  }
+}

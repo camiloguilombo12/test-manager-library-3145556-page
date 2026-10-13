@@ -48,3 +48,11 @@ No hay prórroga: suban avances parciales con commits pequeños durante la prueb
 | [`test-manager-library-3145556-page`](https://github.com/code-sena/test-manager-library-3145556-page) | Sitio público estático de presentación |
 | [`test-manager-library-3145556-infra`](https://github.com/code-sena/test-manager-library-3145556-infra) | Contenedores, red, volúmenes y motor de base de datos vacío |
 | [`test-manager-library-3145556-tool`](https://github.com/code-sena/test-manager-library-3145556-tool) | Utilidades: sembrador de datos de demostración |
+
+## Cómo verlo
+
+Es HTML y CSS sin dependencias ni llamadas a la API: basta con abrir `index.html` en el navegador.
+
+| Tarea | Estado |
+|---|---|
+| T-23 · Sitio público estático de presentación | Hecho: se abre sin la API y se adapta a móvil y escritorio |
