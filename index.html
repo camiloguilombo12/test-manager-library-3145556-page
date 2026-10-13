@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manager Library</title>
+  <meta name="description" content="Catálogo, socios y préstamos para bibliotecas pequeñas.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <span class="brand">Manager Library</span>
+      <nav class="main-nav">
+        <a href="#features">Funciones</a>
+        <a href="#how-it-works">Cómo funciona</a>
+        <a href="#roles">Roles</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>La biblioteca pequeña, en orden</h1>
+        <p class="hero-text">
+          Lleva el catálogo de libros, los socios y los préstamos en un solo lugar, y descubre qué libros se prestan más.
+        </p>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Funciones</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Catálogo</h3>
+            <p>Libros con ISBN, autor, categoría, ejemplares y portada opcional. Búsqueda por título o autor.</p>
+          </article>
+          <article class="card">
+            <h3>Socios</h3>
+            <p>Registro de socios con nombre y documento único. Se consultan y se buscan en segundos.</p>
+          </article>
+          <article class="card">
+            <h3>Préstamos</h3>
+            <p>Hasta 3 libros por préstamo, vencimiento a 14 días y devolución libro por libro.</p>
+          </article>
+          <article class="card">
+            <h3>Vencidos</h3>
+            <p>Lista de libros sin devolver con sus días de retraso, de mayor a menor.</p>
+          </article>
+          <article class="card">
+            <h3>Reporte</h3>
+            <p>Los libros más prestados en un rango de fechas, estable aunque luego cambie el catálogo.</p>
+          </article>
+          <article class="card">
+            <h3>Seguridad</h3>
+            <p>Inicio de sesión con roles. Las contraseñas nunca se guardan ni viajan en claro.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section section-alt">
+      <div class="container">
+        <h2>Cómo funciona</h2>
+        <ol class="steps">
+          <li><strong>Registra</strong> los libros y los socios.</li>
+          <li><strong>Presta</strong> hasta 3 libros a un socio; los ejemplares se descuentan al instante.</li>
+          <li><strong>Recibe</strong> las devoluciones y revisa los vencidos.</li>
+          <li><strong>Consulta</strong> el reporte de los libros más prestados.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="roles" class="section">
+      <div class="container">
+        <h2>Roles</h2>
+        <div class="card-grid card-grid-two">
+          <article class="card">
+            <h3>Administrador</h3>
+            <p>Mantiene el catálogo y los socios, da de alta bibliotecarios y ve todos los reportes.</p>
+          </article>
+          <article class="card">
+            <h3>Bibliotecario</h3>
+            <p>Registra préstamos y devoluciones, y consulta catálogo, socios y vencidos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Manager Library · Prueba técnica ficha ADSO 3145556</p>
+    </div>
+  </footer>
+</body>
+</html>
